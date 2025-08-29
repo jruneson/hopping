@@ -1,0 +1,9 @@
+ntraj   10000
+dt      0.1
+nt      1000
+model   ful
+method  f
+hop_opt d
+res_opt d
+dec_opt i
+dec_param 0.01
