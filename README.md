@@ -18,6 +18,7 @@ Normally, the outputs are
 - `popd2.out` Diabatic P populations
 - `popa1.out` Adiabatic Pi populations
 - `popa2.out` Adiabatic P populations
+- `et.out` Total energy (to check energy conservation)
 
 (For Tully models with the input argument `branching`, the outputs
 are instead `branch1.out` and `branch2.out` for the Pi and P branching
@@ -72,3 +73,4 @@ NOTE: the initial diabatic state is hard-coded for each model in main.f90
 Input and output files are provided for the cases
 - Fulvene with INT and r0=0.01
 - Spin-boson model (column 3) with GONT and r0=0.01
+- Tully ECR scattering model with INT and r0=0.01

@@ -1,0 +1,10 @@
+model_number 3
+ntraj   100000
+branching
+dt      0.2
+model   tul
+method  f
+hop_opt d
+res_opt d
+dec_opt i
+dec_param 0.01

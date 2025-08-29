@@ -1,0 +1,10 @@
+model_number 3
+ntraj   100000
+dt      0.2
+nt      750
+model   tul
+method  f
+hop_opt d
+res_opt d
+dec_opt o
+dec_param 0.001
