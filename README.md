@@ -68,6 +68,7 @@ System-specific arguments:
 
 NOTE: the initial diabatic state is hard-coded for each model in main.f90
 
-## Examples (provided with input and output)
+## Examples 
+Input and output files are provided for the cases
 - Fulvene with INT and r0=0.01
 - Spin-boson model (column 3) with GONT and r0=0.01
