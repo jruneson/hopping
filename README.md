@@ -1,7 +1,8 @@
 # Surface hopping documentation
 
 ## Requirements
-- `lapack`. If not available with -llapack, update the makefile to your actual location.
+- A Fortran compiler like `gfortran`.
+- The `lapack` library. If not available with -llapack, update the makefile to your actual location.
 
 ## Compilation 
 There are two compilation modes:
@@ -67,6 +68,6 @@ System-specific arguments:
 
 NOTE: the initial diabatic state is hard-coded for each model in main.f90
 
-## Examples
+## Examples (provided with input and output)
 - Fulvene with INT and r0=0.01
-- SBM (column 3) with GONT and r0=0.01
+- Spin-boson model (column 3) with GONT and r0=0.01
