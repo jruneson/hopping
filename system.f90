@@ -15,7 +15,6 @@ module system
    real(dp) :: gamma = 0.0 ! Friction coefficient
    allocatable :: rmass(:) ! Masses
    allocatable :: gam(:)   ! Width parameters
-   allocatable :: gammaT(:) ! Thermalization rate of Langevin thermostat
    character(3) :: model
    character(3) :: sampnuc_opt = 'wig'
    procedure (formh_interface), pointer :: formh
@@ -169,8 +168,6 @@ contains
       rmass = 1.d0 ! Unit masses as default
       allocate(gam(nf))
       gam = 0.d0 ! No width as default
-      allocate(gammaT(nf))
-      gammaT = 0.d0 ! No thermalization rate as default
       potmat => potmat_default
       force0 => force0_default
       force => mforce_default

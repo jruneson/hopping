@@ -72,5 +72,8 @@ NOTE: the initial diabatic state is hard-coded for each model in main.f90
 ## Examples 
 Input and output files are provided for the cases
 - Fulvene with INT and r0=0.01
-- Spin-boson model (column 3) with GONT and r0=0.01
-- Tully ECR scattering model with INT and r0=0.01
+- Spin-boson model with GONT and r0=0.01
+- Tully extended coupling model (scattering)
+- Tully extended coupling model (wavepacket)
+- SO2
+- Rhenium complex 

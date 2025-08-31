@@ -332,7 +332,7 @@ contains
    end subroutine
    
    subroutine fs_hop (p,q,ca,u,v,f,ia,d,T,dt)
-      use system, only : nf,ns,force,nacrow
+      use system, only : nf,ns,force,nacrow,rmass
       complex (dpc) ca,u,d,T
 !
 !     ------------------------------------------------------------------
@@ -377,6 +377,13 @@ contains
          case ('o','i','v')
             ! Update NAC vector when needed for rescaling
             call nacrow(q,u,v,ia,d)
+            if (hop_opt.eq.'d') then
+               ! Update T
+               do ib=1,ns
+                  T(ia,ib) = sum(d(:,ib)*p/rmass)
+                  T(ib,ia) = -T(ia,ib)
+               end do
+            end if
          end select
       end if
       deallocate(prob)
